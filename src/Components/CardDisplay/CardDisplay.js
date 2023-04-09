@@ -34,19 +34,23 @@ const CardDisplay = () => {
           onMouseEnter={() => handleCardHover(index)}
           onMouseLeave={() => handleCardLeave(index)}
         >
-          <img
-            src={`${process.env.PUBLIC_URL}/${card.imageFront}`}
-            alt={`Carte ${card.number} recto`}
-            className={`front ${getImageClass(card.orientation)}`}
-          />
-          <img
-            src={`${process.env.PUBLIC_URL}/${card.imageBack}`}
-            alt={`Carte ${card.number} verso`}
-            className={`back ${getImageClass(card.orientation)}`}
-          />
-          <div className="text">
-            <p>Quantité de carte dispo : {card.quantite}</p>
-            <p>Disponiblité : {card.dispo}</p>
+          <div className="card-face front">
+            <img
+              src={`${process.env.PUBLIC_URL}/${card.imageFront}`}
+              alt={`Carte ${card.number} recto`}
+              className={`front-image ${getImageClass(card.orientation)}`}
+            />
+          </div>
+          <div className="card-face back">
+            <img
+              src={`${process.env.PUBLIC_URL}/${card.imageBack}`}
+              alt={`Carte ${card.number} verso`}
+              className={`back-image ${getImageClass(card.orientation)}`}
+            />
+            <div className={`text ${card.isFlipped ? "visible" : "hidden"}`}>
+              <p>Quantité de carte disponible : {card.quantite}</p>
+              <p>Disponibilité : {card.dispo}</p>
+            </div>
           </div>
         </div>
       ))}
