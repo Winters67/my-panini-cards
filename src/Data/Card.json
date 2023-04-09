@@ -1,0 +1,53 @@
+
+
+{
+    "cards": [
+      {
+        "id": 116,
+        "number": 1,
+        "imageFront": "../images/116_000.webp",
+        "imageBack": "../images/116_001.webp",
+        "description": "carte 116",
+        "dispo": "Disponible",
+        "quantite" : "1",
+        "isHovered": false,
+      "orientation": "portrait"
+      },
+      {
+        "id": 161,
+        "number": 2,
+        "imageFront": "../images/161_000.webp",
+        "imageBack": "../images/161_001.webp",
+        "description": "Carte 161",
+        "isHovered": false,
+      "orientation": "paysage"
+      },
+      {
+        "id": 162,
+        "number": 3,
+        "imageFront": "../images/162_000.webp",
+        "imageBack": "../images/162_001.webp",
+        "description": "carte 116",
+        "isHovered": false,
+      "orientation": "portrait"
+      },
+      {
+        "id": 1,
+        "number": 4,
+        "imageFront": "../images/116_000.webp",
+        "imageBack": "../images/116_001.webp",
+        "description": "carte 116",
+        "isHovered": false,
+      "orientation": "portrait"
+      },
+      {
+        "id": 2,
+        "number": 5,
+        "imageFront": "../images/116_000.webp",
+        "imageBack": "../images/116_001.webp",
+        "description": "carte 116",
+        "isHovered": false,
+      "orientation": "portrait"
+      }
+    ]
+  }
